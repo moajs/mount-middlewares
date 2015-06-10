@@ -1,0 +1,22 @@
+{
+  "name": "mount-middlewares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moajs/mount-middlewares.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moajs/mount-middlewares/issues"
+  },
+  "homepage": "https://github.com/moajs/mount-middlewares#readme",
+  "dependencies": {
+    "require-directory": "^2.1.1"
+  }
+}
