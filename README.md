@@ -8,7 +8,6 @@
 ## Usages
 
 ```
-var $middlewares = require('mount-middlewares')();
-
-var $middlewares = require('mount-middlewares')('../middles');
+var $middlewares = require('mount-middlewares');
+console.log($middlewares);
 ```
