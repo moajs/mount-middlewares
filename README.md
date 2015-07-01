@@ -8,6 +8,6 @@
 ## Usages
 
 ```
-var $middlewares = require('mount-middlewares');
+var $middlewares = require('mount-middlewares')(__dirname);
 console.log($middlewares);
 ```
