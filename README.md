@@ -24,3 +24,6 @@ console.log($middlewares);
     mount-path = /Users/sang/workspace/moa/moa-seed1/app/middlewares
     
     
+    '/Users/sang/workspace/moa/moa-seed1/node_modules/first/app/routes/api'
+    mount-path = /Users/sang/workspace/moa/moa-seed1/app/middlewares
+    
