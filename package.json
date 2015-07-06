@@ -1,7 +1,7 @@
 {
   "name": "mount-middlewares",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "moajs mount-middlewares",
   "main": "index.js",
   "scripts": {
     "start": "npm publish .",
