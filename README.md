@@ -12,6 +12,13 @@ var $middlewares = require('mount-middlewares')(__dirname);
 console.log($middlewares);
 ```
 
+在app.js根目录，可以加载app/middlewares
+
+```
+const app = new Koa()
+
+var $middlewares  = require('mount-middlewares')(__dirname);
+```
 
 ## Desc
 
