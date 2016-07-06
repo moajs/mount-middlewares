@@ -1,18 +1,23 @@
-var requireDirectory = require('require-directory');
+var fs = require('fs')
+var requireDirectory = require('require-directory')
+var debug = require('debug')('mount-middlewares')
 
-function m(dir) {
-  console.dir(dir)
-  var a = dir.split('node_modules');
-  // console.log(a)
-  if(a.length == 2){
+function m (dir) {
+  var a = dir.split('app')
+  
+  if (a.length > 1) {
+    a.pop()
+    a.join('app')
+  }else {
+    if(fs.existsSync(dir + '/app/middlewares')){
+      return requireDirectory(module, dir + "/app/middlewares") 
+    }
     
-  }else if(a.length !== 2){
-    a = dir.split('app');
-  }else{
-    throw  "mount-middlewares ERROR: " + dir + "里没有node_modules目录";
+    throw "mount-middlewares ERROR: " + dir + "里没有app目录"
   }
-  var _dir = a[0] + "app/middlewares";
-  return requireDirectory(module, _dir);
+  var _dir = a[0] + "app/middlewares"
+  debug(_dir)
+  return requireDirectory(module, _dir)
 }
 
-module.exports = m;
+module.exports = m
